@@ -22,15 +22,18 @@ export default class Weathers extends React.Component {
     renderList(date, weather, others) {
         const newDate = new Date(date);
         const day = newDate.toString().substr(0, newDate.toString().indexOf(' '));
-
-        return (<div className='weather-info' onClick={() => this.sendInfo(others)}>
-            <Link to={`/${day}`}>{day}</Link>
-            <p>{weather.icon}</p>
+        console.log(weather)
+        return (
+            <Link className='weather-info' to={`/${day}`}>
+                <label>{day}</label>
+            <div  onClick={() => this.sendInfo(others)}>
+            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}/>
             <div className='temps'>
                 <p className='temp-max'>{weather.main.temp_max}</p>
                 <p className='temp-min'>{weather.main.temp_min}</p>
             </div>
-        </div>);
+        </div>
+            </Link>);
     }
 
     sendInfo(weathers) {

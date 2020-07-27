@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: row;
   float: top;
+  width: 80%;
 }
 .weather-info {
   padding: 3%;
@@ -41,10 +42,12 @@
   flex-direction: row;
 }
 .temp-max {
-  padding: 1.5%;
+  padding: 2%;
+  font-weight: bold;
 }
 .temp-min {
-  padding: 1.5%;
+  padding: 2%;
+  color: darkgrey;
 }
 .grid-day {
 
