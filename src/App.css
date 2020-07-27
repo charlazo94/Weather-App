@@ -46,6 +46,19 @@
 .temp-min {
   padding: 1.5%;
 }
+.grid-day {
+
+  justify-self: center;
+
+}
+.weather-detail {
+
+  text-align: center !important;
+}
+.container {
+  margin-top: 2%;
+  border-style: solid;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
