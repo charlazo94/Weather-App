@@ -2,19 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Weathers from './codebase/weathers';
+import {Route} from "react-router-dom";
 
-const list = [{
-    day: 'sun',
-    icon: 'png',
-    maxTemp: 87,
-    minTemp: 62
-},
-    {
-        day: 'mon',
-        icon: 'png',
-        maxTemp: 128,
-        minTemp: 98
-    }];
 
 function App() {
     return (
@@ -34,7 +23,7 @@ function App() {
                 </a>
             </header>*/}
 
-                <Weathers list={list}> </Weathers>
+            <Route path='/' component={() => <Weathers />}/>
         </div>
     );
 }

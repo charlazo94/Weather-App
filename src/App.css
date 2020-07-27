@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.weathers-body {
+  display: flex;
+  flex-direction: row;
+  float: top;
+}
+.weather-info {
+  padding: 3%;
+}
+.temps {
+  display: flex;
+  flex-direction: row;
+}
+.temp-max {
+  padding: 1.5%;
+}
+.temp-min {
+  padding: 1.5%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

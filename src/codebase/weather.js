@@ -8,7 +8,7 @@ export default class Weather extends React.Component {
     }
 
     renderHourly(weather) {
-        console.log(weather);
+
         return (<div>
             {this.renderLabel('Hora', weather.dt_txt)}
             {this.renderLabel('Se siente', weather.main.feels_like)}
